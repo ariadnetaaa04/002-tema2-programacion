@@ -13,7 +13,9 @@ public class Vehicle : MonoBehaviour
     public string sound;
     public float gasoline;
 
+    public bool canGetBigger;
     public bool isOn;
+  
 
     private void Start()
     {
@@ -51,7 +53,7 @@ public class Vehicle : MonoBehaviour
          {
              Debug.Log($"The {name} is off");
          }
-        */
+        
      
       if (gasoline < 10 && isOn == true) { 
                 Debug.Log($"The {name} has low gasoline!");
@@ -60,7 +62,14 @@ public class Vehicle : MonoBehaviour
         {
             Debug.Log($"The {name} is off");
         }
-
+      */
     }
-
+    private void Update()
+    {
+        if (canGetBigger && Input.GetMouseButtonDown(0)) 
+        { 
+                transform.localScale += Vector3.one;
+           
+        }
+    }
 }

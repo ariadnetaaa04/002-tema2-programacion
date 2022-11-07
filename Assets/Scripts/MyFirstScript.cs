@@ -162,7 +162,20 @@ public class MyFirstScript : MonoBehaviour
         //Modificar posicion
         transform.position = initialPos;
 
+        //Negacion: La variable es falsa? Si pone false es que no.
 
+        //X(dreta,esquerra) Y (adalt,abaix) Z(devant,darrera)
+
+        //Modificar posicion con el Update/Input
+
+
+    }
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            transform.position += Vector3.up;
+        }
     }
 
 }

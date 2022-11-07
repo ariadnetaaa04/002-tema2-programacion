@@ -530,6 +530,7 @@ MonoBehaviour:
   name: Bike
   sound: 
   gasoline: 33.9
+  canGetBigger: 0
   isOn: 0
 --- !u!1 &553347272
 GameObject:
@@ -1510,6 +1511,7 @@ MonoBehaviour:
   name: bus
   sound: 
   gasoline: 49.75
+  canGetBigger: 0
   isOn: 1
 --- !u!1 &1654085438
 GameObject:
@@ -1913,6 +1915,7 @@ GameObject:
   - component: {fileID: 2142509096}
   - component: {fileID: 2142509100}
   - component: {fileID: 2142509101}
+  - component: {fileID: 2142509102}
   m_Layer: 0
   m_Name: car
   m_TagString: Untagged
@@ -2009,7 +2012,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2142509094}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d6c14d5faf89be47a91b7f82af13095, type: 3}
   m_Name: 
@@ -2018,6 +2021,7 @@ MonoBehaviour:
   name: Car
   sound: brum brum
   gasoline: 8.25
+  canGetBigger: 1
   isOn: 1
 --- !u!114 &2142509101
 MonoBehaviour:
@@ -2026,7 +2030,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2142509094}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41cdc88b147020042b1bd7cebb8e1a33, type: 3}
   m_Name: 
@@ -2046,3 +2050,17 @@ MonoBehaviour:
   number1: -1
   number2: 0
   initialPos: {x: 1, y: 1, z: 1}
+--- !u!114 &2142509102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142509094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78dca281b2750394ebfd21390ca6b283, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 2
+  y: 3
