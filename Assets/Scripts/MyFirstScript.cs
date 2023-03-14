@@ -178,5 +178,52 @@ public class MyFirstScript : MonoBehaviour
         }
     }
 
+    //Random.Range(min,max)
+    //transform.position=new Vector 3 (x,y,z)
+    /*corrutina
+     * Para llamarla
+     * 
+     * 
+     * StartCoroutine(GenerateNextRandomPos()); 
+     * 
+     * 
+     * Para crearla
+    private IEnumerator GenerateNextRandomPos()
+    {
+        while (!isGameOver)
+        {
+            yield return new WaitForSeconds(2);
+    transform.position =  GenerateRandomPos();
+        }
+
+    }
+    */
+
+    //GetComponent<MeshRenderer>().material
+    //Repetir la llamada a una función con InvokeRepeating()
+
+    /*Detectar colisiones entre dos Game Objects con OnTriggerEnter(),
+    OnTriggerStay(), OnTriggerExit(), OnCollisionEnter(), OnCollisionStay() u
+    OnCollisionExit()
+    */
+
+    //Aplicar fuerzas sobre un Rigidbody con AddForce()
+    //Buscar componentes únicas de otro Game Object en la escena con FindObjectOfType<>
+    //Awake (pantalla de carga)
+
+    /*
+     *  private AudioSource playerAudio;
+    public AudioClip moneySound;
+    public AudioClip explodeSound;
+
+          playerAudio = GetComponent<AudioSource>();
+    playerAudio.PlayOneShot(moneySound, 1.0f);
+
+
+
+
+    *************TEXTO*****************
+    *livesText.text = $"Lives:  { lives}";
+    */
 }
 
